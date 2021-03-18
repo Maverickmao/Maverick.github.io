@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://maverickmao.github.io/maverick.github.io/</id>
+    <title>Maverick</title>
+    <updated>2021-03-18T01:51:33.971Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://maverickmao.github.io/maverick.github.io/"/>
+    <link rel="self" href="https://maverickmao.github.io/maverick.github.io/atom.xml"/>
+    <subtitle>永怀善意，清澈明朗。</subtitle>
+    <logo>https://maverickmao.github.io/maverick.github.io/images/avatar.png</logo>
+    <icon>https://maverickmao.github.io/maverick.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Maverick</rights>
+    <entry>
+        <title type="html"><![CDATA[Characterization of Pollen Development in Staminate Kiwifruit (Actinidia sp.) Cultivars]]></title>
+        <id>https://maverickmao.github.io/maverick.github.io/post/characterization-of-pollen-development-in-staminate-kiwifruit-actinidia-sp-cultivars/</id>
+        <link href="https://maverickmao.github.io/maverick.github.io/post/characterization-of-pollen-development-in-staminate-kiwifruit-actinidia-sp-cultivars/">
+        </link>
+        <updated>2021-03-18T01:51:02.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="materials-and-methods">Materials and Methods</h3>
+<ul>
+<li>花粉发育的组织学分析</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>在每个发育阶段收集花药，立即用0.05 m 磷酸盐缓冲液与2.5% 戊二醛和6% 多聚甲醛在4 ° c 混合固定，然后在黑暗中孵育48小时。</p>
+</li>
+<li>
+<p>在脱水过程中，用真空泵抽取果皮组织中的空气4次,样品在4 ° c 条件下黑暗中保存24h。</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>花粉产量的定量分析</li>
+</ul>
+<blockquote>
+<ul>
+<li>在每个花发育阶段收集到公斤的雄花。每朵花的花药、花瓣、花萼和花梗用分离设备进行分离和去除。</li>
+<li>分离出的花药在25 ° c 的强制通风静态干燥器中干燥24h，采用花粉收集器分离花药中的花粉粒。</li>
+</ul>
+</blockquote>
+<ul>
+<li>花粉生活力和萌发率</li>
+</ul>
+<blockquote>
+<ul>
+<li>我们使用双乙酸荧光素(FDA)和1% 碘碘化钾(i2ki)染色方法评估了花粉的生活力</li>
+<li>采用光学显微镜和荧光显微镜系统，对于 i2ki 染色，深染的花粉颗粒被认为是可行的; 对于 FDA 染色，绿色荧光的花粉颗粒被认为是可行的</li>
+<li>为了评价花粉的萌发，采用10% 蔗糖和0.01% H3 BO4组成的液体发芽培养基，在22 ° c 条件下黑暗条件下培养3h，分别采集花粉2ー5个发育时期的花粉粒。</li>
+<li>当花粉管长度是花粉粒大小的两倍时，花粉粒可以萌发。</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+</feed>
