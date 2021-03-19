@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maverickmao.github.io/Maverick.github.io/</id>
     <title>Maverick</title>
-    <updated>2021-03-18T03:03:04.825Z</updated>
+    <updated>2021-03-19T01:17:30.479Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maverickmao.github.io/Maverick.github.io/"/>
     <link rel="self" href="https://maverickmao.github.io/Maverick.github.io/atom.xml"/>
@@ -18,7 +18,7 @@
         <updated>2021-03-18T02:25:08.000Z</updated>
         <content type="html"><![CDATA[<h2 id="notes">Notes</h2>
 <p>[toc]</p>
-<p>##Abstract</p>
+<h2 id="abstract">Abstract</h2>
 <ol>
 <li>花粉不育是由位于第6号染色体上的主基因 Ps/Ps 的纯合中的隐性等位基因决定的。</li>
 <li>将 Ps 精细定位到160kb 左右的区域，建立了分子标记辅助育种。</li>
@@ -27,7 +27,7 @@
 <blockquote>
 <p>progenies, advanced selections, and cultivars</p>
 </blockquote>
-<p>##Introduction</p>
+<h2 id="introduction">Introduction</h2>
 <ul>
 <li>雄性不育个体的花没有花粉，花药较小，颜色比正常花浅。</li>
 <li>雄性不育表型不产生花粉粒，与正常可育花药的黄色相比，具有较小的空花药，白色或奶油色。</li>
@@ -38,7 +38,7 @@
 <li>G6和 Ps 上的恢复基因在染色体上很接近，尽管它们似乎是由不同的基因决定的</li>
 <li>利用<mark>连锁定位</mark>和<mark>全基因组序列分析定位</mark>技术，我们精细定位了 Ps 基因，并验证了两个紧密连锁的标记，一个是 SSR<!--简单的序列重复--> 标记，一个是 SNP<!--单核苷酸多态性--> 标记，这两个标记已在一大批育种后代和一个广泛的种质收集中进行了基因型分析。</li>
 </ul>
-<p>##Experimental</p>
+<h2 id="experimental">Experimental</h2>
 <ul>
 <li>DNA 提取(从幼叶组织中提取的)</li>
 </ul>
@@ -69,7 +69,7 @@
 <blockquote>
 <p>BCFtools、platypus、GATK、SnpEff</p>
 </blockquote>
-<p>##Results</p>
+<h2 id="results">Results</h2>
 <ul>
 <li>
 <p>CPP21395有6个等位基因(187,190,194,196,198,200)</p>
@@ -109,7 +109,7 @@
 <li>Blastx 分析表明，我们的基因与其他物种注释为纤维素合成酶样蛋白 E1的蛋白质相似。</li>
 <li>纤维素是花粉细胞壁内壁的重要组成部分(Wu 等人，2015年) ，花粉粒细胞壁缺陷的雄性不育品种已经在几个物种中被描述，包括棉花(Wu 等人，2015年) ，水稻(Xu 等人，2017年)和高粱(Petti 等人，2015年)</li>
 </ul>
-<p>##Discussions</p>
+<h2 id="discussions">Discussions</h2>
 <ul>
 <li>在桃6号染色体上的 SSR 和 InDel 标记，在 del1860和 CPP21230(Ps06:1.859.488 to Ps06:2.192.785)两个标记之间</li>
 <li>全基因组关联分析(Li 等人，2019年)在桃材料的收集中发现了 PS 表型和 SNP 之间的强烈关联</li>
