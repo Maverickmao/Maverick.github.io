@@ -25,7 +25,7 @@
 
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -39,42 +39,18 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            永怀善意，清澈明朗。
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/Maverickmao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-github-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://twitter.com/fdyemao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-twitter-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://weibo.com/u/5686272507" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-weibo-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%8F%96%E6%9D%90">取材</a></li>
+<li><a href="#%E5%88%87%E7%89%87">切片</a></li>
+</ul>
+</li>
+</ul>
+
           </div>
         </div>
       
@@ -124,100 +100,90 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">石蜡切片</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2021-03-29 / 2 min read
+        </div>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/pcr/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">PCR</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 6 min read</div>
-    </div>
-  </section>
+        <div class="post-content yue">
+          <h2 id="取材">取材</h2>
+<ul>
+<li>注意事项</li>
+</ul>
+<blockquote>
+<p>1.锋利的取材刀<br>
+2.取材要及时,固定要及时<br>
+3.管腔组织如胃肠组织,应先平展于滤纸上粘着以后 慢慢放入固定液中<br>
+4.微量标本、易碎标本处理<br>
+5.组织内的钙化病灶或骨质,应在充分固定后进行脱钙,组织内的非病理异物应予剔除<br>
+6.对于病理材料,除病变部位外,还要切取病变和正 常组织交界的区域,以利于对比观察分析<br>
+7.注明取材时间、组织名称、组织块数量等基本信息以备查</p>
+</blockquote>
+<h2 id="切片">切片</h2>
+<ul>
+<li>切片</li>
+</ul>
+<blockquote>
+<p>1.室温过高时,可将修好的蜡块放到冰盒上冷却一定时间,用冰块冷却刀和组 织块,减少刀与组织块在过程中产生的热,使石蜡保持合适的硬度以利于切片<br>
+2.切片时要及时清洁刀口、除去蜡屑,否则易引起破碎;<br>
+3.切片时摇动旋转轮速度不可过快,用力应均匀平稳,以40-60r/min为宜;<br>
+4.切片厚度为3-5um</p>
+</blockquote>
+<ul>
+<li>展片</li>
+</ul>
+<blockquote>
+<p>切片经30%的乙醇初展,再用载玻片捞起蜡带放入摊片机水盒内(一般46℃左右)</p>
+</blockquote>
+<ul>
+<li>贴片</li>
+</ul>
+<blockquote>
+<p>待切片在恒温水内充分推开展平后,将载玻片垂直插入水中以毛面轻靠切片 井用毛笔将切片一边披于玻片上,随即将玻片直立提起,避免气泡快!</p>
+</blockquote>
+<ul>
+<li>烤片</li>
+</ul>
+<blockquote>
+<p>石蜡切片在60-65℃烤片60-120min</p>
+</blockquote>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/graphpad/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">GraphPad</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
+        </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">实时荧光定量PCR原理与分析方法</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 5 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">石蜡切片</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://maverickmao.github.io/Maverick.github.io/tag/OprJbnnB-/">
+            <span class="flex-auto">实验方法</span>
+          </a>
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">生物信息学</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 3 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${5 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">基因分析</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 8 min read</div>
-    </div>
-  </section>
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  实时荧光定量PCR原理与分析方法
+                </h3>
+              </a>
+            </div>
+          
 
-        <div class="read-more">
+          
+            <div class="next-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
+                <h3 class="post-title">
+                  生物信息学
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
-  
-  
-</div>
 
-        </div>
+        
+
       </div>
     </div>
 

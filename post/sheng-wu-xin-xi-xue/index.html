@@ -25,7 +25,7 @@
 
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -39,42 +39,33 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            永怀善意，清澈明朗。
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/Maverickmao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-github-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://twitter.com/fdyemao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-twitter-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://weibo.com/u/5686272507" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-weibo-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%B8%80-ncbi%E5%8F%8Agenbank%E4%BB%8B%E7%BB%8D">一、NCBI及GenBank介绍</a></li>
+<li><a href="#%E4%BA%8C-%E5%A6%82%E4%BD%95%E6%A3%80%E7%B4%A2">二、如何检索</a>
+<ul>
+<li><a href="#%E4%B8%80-entrez">（一）、Entrez</a>
+<ul>
+<li><a href="#1-%E5%9F%BA%E6%9C%AC%E6%A3%80%E7%B4%A2%E5%8A%9F%E8%83%BD">1、基本检索功能</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E8%A7%A3%E9%87%8A%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C">解释检索结果</a></li>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E9%80%89%E5%AE%9A%E7%BB%93%E6%9E%9C">下载选定结果</a></li>
+<li><a href="#ncbi%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90%E4%BB%8B%E7%BB%8D">NCBI其他资源介绍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
           </div>
         </div>
       
@@ -124,100 +115,211 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">生物信息学</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2021-03-29 / 3 min read
+        </div>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/pcr/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">PCR</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 6 min read</div>
-    </div>
-  </section>
+        <div class="post-content yue">
+          <h3 id="一-ncbi及genbank介绍">一、NCBI及GenBank介绍</h3>
+<p><strong>NCBI</strong>（National Center for Biotechnology Information）</p>
+<p><strong>链接：</strong></p>
+<blockquote>
+<ul>
+<li>
+<p>NCBI(<a href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>)</p>
+</li>
+<li>
+<p>BLAST(<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a>)</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="二-如何检索">二、如何检索</h3>
+<ol>
+<li>Entrez Nucleotide(<a href="https://www.ncbi.nlm.nih.gov/nucleotide/">https://www.ncbi.nlm.nih.gov/nucleotide/</a>)</li>
+<li>Blast</li>
+<li>NCBI e-utilities</li>
+<li>FTP:(<a href="ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1">ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1</a>)(<a href="ftp://ftp.ncbi.nlm.nih.gov/genbank">ftp://ftp.ncbi.nlm.nih.gov/genbank</a>)</li>
+</ol>
+<h4 id="一-entrez">（一）、Entrez</h4>
+<blockquote>
+<ul>
+<li>用以整合NCBI数据库中信息的搜寻和检索工具</li>
+<li>同时也提供序列和染色体图谱的图形视图。</li>
+<li>这些数据库包括核酸序列，蛋白序列，大分子结构，全基因组，和通过PubMed检索的MEDLINE</li>
+<li>Entrez的一个强大和独特的特点是检索相关的序列，结构，和参考文献的能力。</li>
+<li>参考文献通过PubMed获得</li>
+</ul>
+</blockquote>
+<h5 id="1-基本检索功能">1、基本检索功能</h5>
+<p><code>Tips：其余数据库检索基本通用</code></p>
+<ol>
+<li>限定词检索</li>
+</ol>
+<blockquote>
+<ul>
+<li>
+<p>protein name : insulin</p>
+</li>
+<li>
+<p>gene name, or gene symbol : p53,CREB1</p>
+</li>
+<li>
+<p>Species name: homo sapien</p>
+</li>
+<li>
+<p>a submitter or author name in the following format will produce the best results.</p>
+<blockquote>
+<p>Smith JR (last name followed by initials, no punctuation)</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><em><strong>检索限定词</strong></em></li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>基因名称的检索限定词:[GENE] or [GENE NAME]</p>
+</li>
+<li>
+<p>生物体名称的检索限定词:[ORGN] or [ORGANISM|</p>
+</li>
+<li>
+<p>作者姓名的检索限定词:[AUTH] or [AUTHOR]</p>
+<blockquote>
+<p>格式：gene name[GENEJ AND human[ORGN]</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><em><strong>逻辑操作符</strong></em></li>
+</ul>
+<blockquote>
+<p>与:AND</p>
+<blockquote>
+<p>contactin AND neurofascin</p>
+</blockquote>
+<p>或:OR</p>
+<blockquote>
+<p>contactin OR neurofascin</p>
+</blockquote>
+<p>非:NOT</p>
+<blockquote>
+<p>contactin NOT neurofascin</p>
+</blockquote>
+</blockquote>
+<ol start="2">
+<li>特殊标识符检索(ACCESSION, Gl)</li>
+</ol>
+<blockquote>
+<ul>
+<li>基因信息号(G1)</li>
+</ul>
+<blockquote>
+<p>为一串数字，如6995995</p>
+</blockquote>
+<ul>
+<li>Accession number:</li>
+</ul>
+<blockquote>
+<ul>
+<li>a) GenBank/EMBL/DDB J序列接受号</li>
+</ul>
+<blockquote>
+<p>1个字母+5个数字 如U12345</p>
+<p>2个字母+6个数字 如AY12345</p>
+</blockquote>
+<ul>
+<li>b)PDB序列接受号</li>
+</ul>
+<blockquote>
+<p>1个数字+3个字母 如1TUP</p>
+</blockquote>
+<ul>
+<li>c) Refseq 序列号</li>
+</ul>
+<blockquote>
+<p><a href="https://www.ncbi.nlm.nih.gov/genbank/samplerecord/">https://www.ncbi.nlm.nih.gov/genbank/samplerecord/</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>
+<p>特定短语</p>
+</li>
+<li>
+<p>范围检索</p>
+</li>
+</ol>
+<ul>
+<li>序列接收号范围检索:</li>
+</ul>
+<blockquote>
+<p>AF114696:AF114714[ACCN]</p>
+<p>序列接收号的检索限定词为[ACCN]或者[ACCESSION]</p>
+</blockquote>
+<ul>
+<li>序列长度范围检索</li>
+</ul>
+<blockquote>
+<p>3000:4000[SLEN]</p>
+</blockquote>
+<ul>
+<li>日期范围检索</li>
+</ul>
+<blockquote>
+<p>2012/01: 2015/12/31[MDAT] or [PDAT]</p>
+</blockquote>
+<ol start="5">
+<li>高级检索</li>
+</ol>
+<hr>
+<h3 id="解释检索结果">解释检索结果</h3>
+<hr>
+<h3 id="下载选定结果">下载选定结果</h3>
+<hr>
+<h3 id="ncbi其他资源介绍">NCBI其他资源介绍</h3>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/graphpad/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">GraphPad</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
+        </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">实时荧光定量PCR原理与分析方法</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 5 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">石蜡切片</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://maverickmao.github.io/Maverick.github.io/tag/OprJbnnB-/">
+            <span class="flex-auto">实验方法</span>
+          </a>
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">生物信息学</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 3 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${5 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">基因分析</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 8 min read</div>
-    </div>
-  </section>
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  石蜡切片
+                </h3>
+              </a>
+            </div>
+          
 
-        <div class="read-more">
+          
+            <div class="next-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/">
+                <h3 class="post-title">
+                  基因分析
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
-  
-  
-</div>
 
-        </div>
+        
+
       </div>
     </div>
 

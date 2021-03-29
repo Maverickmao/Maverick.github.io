@@ -1,0 +1,780 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maverick</title>
+<meta name="description" content="永怀善意，清澈明朗。" />
+<link rel="shortcut icon" href="https://maverickmao.github.io/Maverick.github.io//favicon.ico?v=1616983076593">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://maverickmao.github.io/Maverick.github.io//styles/main.css">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYQ1QNQB7Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CYQ1QNQB7Y');
+</script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://maverickmao.github.io/Maverick.github.io/">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://maverickmao.github.io/Maverick.github.io//images/avatar.png?v=1616983076593" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Maverick</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="https://maverickmao.github.io/Maverick.github.io/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://maoresumes.netlify.app/" class="menu" style="animation-delay: 0.2s">
+          个人简介
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.6000000000000001s">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu" style="animation-delay: 0.8s">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700"></div>
+    <a class="rss" href="https://maverickmao.github.io/Maverick.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">基因分析</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2021-03-29 / 8 min read
+        </div>
+        
+        <div class="post-content yue">
+          <ol>
+<li>启动子分析</li>
+</ol>
+<ul>
+<li>Promoter 2.0进行启动子区的预测分析</li>
+<li>PLACE 与PlantCARE顺式调控元件的预测</li>
+<li>Neural Network Promoter Prediction[http://www.fruitfly.org/seq_tools/promoter.html]预测基因的启动子序列</li>
+<li>[https://www.ncbi.nlm.nih.gov/orffinder/]预测基因的启动子序列</li>
+<li>[https://flute-tulip-rg2y.squarespace.com/]开放式阅读框分析，预测基因的启动子序列，并分析外显子和内含子序列</li>
+<li>利用Protparam 工具预测蛋白的基本理化性质。[https://www.expasy.org/resources/protparam]</li>
+<li>利用BioEdit分析疏水性。</li>
+</ul>
+<ol start="2">
+<li>跨膜区分析</li>
+</ol>
+<ul>
+<li>利用依靠跨膜蛋白数据库Tmbase的TMpred工具分析蛋白的跨膜区和跨膜方向。</li>
+</ul>
+<ol start="3">
+<li>二级结构分析</li>
+</ol>
+<ul>
+<li>[http://www.predictprotein.org] 预测蛋白二级结构</li>
+</ul>
+<ol start="4">
+<li>结构域分析</li>
+</ol>
+<ul>
+<li>InterProScan[http://www.ebi.ac.uk/interpro/search/sequence/]进行结构域分析。</li>
+</ul>
+<ol start="5">
+<li>3d结构预测</li>
+</ol>
+<ul>
+<li>同源建模的分析工具SWISS-MODEL[https://www.expasy.org/resources/swiss-model-workspace]进行3-D结构预测。不同物种间clc蛋白同源性比较及进化分析</li>
+</ul>
+<ol start="6">
+<li>
+<p>基因预测</p>
+</li>
+<li>
+<p>跨膜区分析</p>
+</li>
+</ol>
+<ul>
+<li>依靠跨膜蛋白数据库Tmbase的 TMpred工具分析蛋白的跨膜区和跨膜方向。</li>
+</ul>
+<ol start="8">
+<li>二级结构分析</li>
+</ol>
+<ul>
+<li>Bio-informatique Lyonnais 的蛋白质分析网络（Network Protein Secquence Analysis）GOR4程序[https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=npsa_gor4.html]预测蛋白二级结构</li>
+</ul>
+<ol start="9">
+<li>结构域分析</li>
+</ol>
+<ul>
+<li>InterProScan[http://www.ebi.ac.uk/interpro/search/sequence/]进行结构域分析</li>
+</ul>
+<ol start="10">
+<li>空间结构预测</li>
+</ol>
+<ul>
+<li>同源建模的分析工具SWISS-MODEL进行空间结构预测[https://www.expasy.org/]</li>
+</ul>
+<hr>
+<table>
+<thead>
+<tr>
+<th>程序名</th>
+<th>搜索序列</th>
+<th>数据库</th>
+<th>内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>blastp</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>比较氨基酸序列与蛋白质数据库</strong></td>
+<td>使用取代矩阵寻找较远的关系，进行SEG过滤</td>
+</tr>
+<tr>
+<td><strong>blastn</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较核酸序列与核酸数据库</strong></td>
+<td>寻找较高分值的匹配，对较远的关系不太适用</td>
+</tr>
+<tr>
+<td><strong>blastx</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>比较核酸序列理论上的六框架的所有转换结果和蛋白质数据库</strong></td>
+<td>用于新的DNA序列和ESTs的分析，可转译搜索序列</td>
+</tr>
+<tr>
+<td><strong>tblastn</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较蛋白质序列和核酸序列数据库，动态转换为六框架结果</strong></td>
+<td>用于寻找数据库中没有标注的编码区，可转译数据库序列</td>
+</tr>
+<tr>
+<td><strong>tblastx</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较核酸序列和核酸序列数据库，经过两次动态转换为六框架结果</strong></td>
+<td>转译搜索序列与数据库序列</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>网址</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClustalX</td>
+<td>http://bips.u-strasbg.fr/fr/Documentation/ClustalX/</td>
+<td>图形化的多序列比对工具</td>
+</tr>
+<tr>
+<td>ClustalW</td>
+<td>http://www.cf.ac.uk/biosi/research/biosoft/Downloads/clustalw.html</td>
+<td>命令行格式的多序列比对工具</td>
+</tr>
+<tr>
+<td>GeneDoc</td>
+<td>http://www.psc.edu/biomed/genedoc/</td>
+<td>多序列比对结果的美化工具</td>
+</tr>
+<tr>
+<td>BioEdit</td>
+<td>http://www.mbio.ncsu.edu/BioEdit/bioedit.html</td>
+<td>序列分析的综合工具</td>
+</tr>
+<tr>
+<td>MEGA</td>
+<td>http://www.megasoftware.net/</td>
+<td>图形化、集成的进化分析工具，不包括ML</td>
+</tr>
+<tr>
+<td>PAUP</td>
+<td>http://paup.csit.fsu.edu/</td>
+<td>商业软件，集成的进化分析工具</td>
+</tr>
+<tr>
+<td>PHYLIP</td>
+<td>http://evolution.genetics.washington.edu/phylip.html</td>
+<td>免费的、集成的进化分析工具</td>
+</tr>
+<tr>
+<td>PHYML</td>
+<td>http://atgc.lirmm.fr/phyml/</td>
+<td>最快的ML建树工具</td>
+</tr>
+<tr>
+<td>PAML</td>
+<td>http://abacus.gene.ucl.ac.uk/software/paml.html</td>
+<td>ML建树工具</td>
+</tr>
+<tr>
+<td>Tree-puzzle</td>
+<td>http://www.tree-puzzle.de/</td>
+<td>较快的ML建树工具</td>
+</tr>
+<tr>
+<td>MrBayes</td>
+<td>http://mrbayes.csit.fsu.edu/</td>
+<td>基于贝叶斯方法的建树工具</td>
+</tr>
+<tr>
+<td>MAC5</td>
+<td>http://www.agapow.net/software/mac5/</td>
+<td>基于贝叶斯方法的建树工具</td>
+</tr>
+<tr>
+<td>TreeView</td>
+<td>http://taxonomy.zoology.gla.ac.uk/rod/treeview.html</td>
+<td>进化树显示工具</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>基因开放阅读框</strong>/<strong>基因结构分析识别工具</strong></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ORF  Finder</strong></td>
+<td>http://www.ncbi.nlm.nih.gov/gorf/gorf.html</td>
+<td>NCBI</td>
+<td>通用</td>
+</tr>
+<tr>
+<td><strong>BestORF</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>真核</td>
+</tr>
+<tr>
+<td><strong>GENSCAN</strong></td>
+<td>http://genes.mit.edu/GENSCAN.html</td>
+<td><strong>MIT</strong></td>
+<td><strong>脊椎、拟南芥、玉米</strong></td>
+</tr>
+<tr>
+<td><strong>Gene  Finder</strong></td>
+<td>http://rulai.cshl.org/tools/genefinder/</td>
+<td>Zhang  lab</td>
+<td>人、小鼠、拟南芥、酵母</td>
+</tr>
+<tr>
+<td><strong>FGENESH</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>真核</td>
+</tr>
+<tr>
+<td><strong>GeneMark</strong></td>
+<td>http://opal.biology.gatech.edu/GeneMark/</td>
+<td>GIT</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>GLIMMER</strong></td>
+<td>http://www.ncbi.nlm.nih.gov/genomes/MICROBES/glimmer_3.cgi  http://www.cbcb.umd.edu/software/glimmer</td>
+<td><strong>Maryland</strong></td>
+<td><strong>原核</strong></td>
+</tr>
+<tr>
+<td><strong>FgeneSB</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>细菌</td>
+</tr>
+<tr>
+<td><strong>FgeneSV</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>病毒</td>
+</tr>
+<tr>
+<td><strong>Generation</strong></td>
+<td>http://compbio.ornl.gov/generation/</td>
+<td>ORNL</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>FGENESH+</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>GenomeScan</strong></td>
+<td><strong>http://genes.mit.edu/genomescan.html</strong></td>
+<td><strong>MIT</strong></td>
+<td><strong>脊椎、拟南芥、玉米</strong></td>
+</tr>
+<tr>
+<td><strong>GeneWise</strong></td>
+<td>http://www.ebi.ac.uk/Wise2/</td>
+<td>EBI</td>
+<td>人、蠕虫</td>
+</tr>
+<tr>
+<td><strong>GRAIL</strong></td>
+<td>http://grail.lsd.ornl.gov/grailexp/</td>
+<td>ORNL</td>
+<td>人、小鼠、拟南芥、果蝇</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>基因开放阅读框/基因结构分析工具</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>对基因组序列的读码框区域进行预测</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NNSplice</strong></td>
+<td>http://www.fruitfly.org/seq_tools/splice.html</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>NetGene2</strong></td>
+<td>http://www.cbs.dtu.dk/services/NetGene2/</td>
+<td><strong>Web</strong></td>
+</tr>
+<tr>
+<td><strong>SPL/SPLM/RNASPL/FSPLICE</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>GeneSplicer</strong></td>
+<td>http://www.tigr.org/tdb/GeneSplicer/gene_spl.html</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>SplicePredictor</strong></td>
+<td>http://bioinformatics.iastate.edu/cgi-bin/sp.cgi</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>分析mRNA/cDNA的外显子组成</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>GeneSeqer</strong></td>
+<td>http://bioinformatics.iastate.edu/cgi-bin/gs.cgi</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>Spidey</strong></td>
+<td><a href="http://www.ncbi.nih.gov/spidey">http://www.ncbi.nih.gov/spidey</a></td>
+<td><strong>Web</strong></td>
+</tr>
+<tr>
+<td><strong>Sim4</strong></td>
+<td>http://gamay.univ-perp.fr/analyse_seq/sim4  http://globin.cse.psu.edu/</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>BLAT</strong></td>
+<td><a href="http://www.cse.ucsc.edu/~kent/src/unzipped/blat/">http://www.cse.ucsc.edu/~kent/src/unzipped/blat/</a></td>
+<td>Linux</td>
+</tr>
+<tr>
+<td><strong>BLAST</strong></td>
+<td><a href="ftp://ftp.ncbi.nlm.nih.gov/BLAST/Executables">ftp://ftp.ncbi.nlm.nih.gov/BLAST/Executables</a></td>
+<td>Web/Windows/Linux</td>
+</tr>
+<tr>
+<td><strong>FASTA</strong></td>
+<td><a href="ftp://ftp.virginia.edu/pub/fasta/win32_fasta/fasta34t21b5d.zip">ftp://ftp.virginia.edu/pub/fasta/win32_fasta/fasta34t21b5d.zip</a></td>
+<td>Web/Windows/Linux</td>
+</tr>
+</tbody>
+</table>
+<p><strong>查询选择性剪切相关的网站</strong></p>
+<p><strong>从已知基因的功能推测剪切机制</strong></p>
+<table>
+<thead>
+<tr>
+<th>**http://<strong><strong>www.ebi.ac.uk</strong></strong>/<strong><strong>asd</strong></strong>/**<strong>index.html</strong></th>
+<th><strong>综合</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>http://splicenest.molgen.mpg.de/</strong></td>
+<td><strong>综合</strong></td>
+</tr>
+<tr>
+<td><strong>http://<strong><strong>cgsigma.cshl.org</strong></strong>/new_alt_exon_db2/</strong></td>
+<td><strong>综合</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.tigr.org/tigr-scripts/tgi/splnotes.pl?species=human</strong>  <strong>http://prosplicer.mbc.nctu.edu.tw/</strong>  <strong>http://www.bit.uq.edu.au/altExtron</strong></td>
+<td><strong>人</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.cse.ucsc.edu/~kent/intronerator/altsplice.html</strong></td>
+<td><strong>线虫</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.tigr.org/tdb/e2k1/ath1/altsplicing/splicing_variations.shtml</strong></td>
+<td><strong>拟南芥</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>启动子数据库</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TransFac</strong></td>
+<td>http://www.gene-regulation.com/</td>
+</tr>
+<tr>
+<td><strong>EPD</strong></td>
+<td><strong>http://www.epd.isb-sib.ch/</strong></td>
+</tr>
+<tr>
+<td><strong>TRRD</strong></td>
+<td>http://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd</td>
+</tr>
+<tr>
+<td><strong>Jaspar</strong></td>
+<td>http://jaspar.genereg.net/</td>
+</tr>
+<tr>
+<td><strong>Zhang  Lab</strong></td>
+<td>http://rulai.cshl.org/software/index1.htm</td>
+</tr>
+<tr>
+<td><strong>DBTSS</strong></td>
+<td>http://dbtss.hgc.jp/index.html</td>
+</tr>
+<tr>
+<td><strong>MIRAGE</strong></td>
+<td>http://www.ifti.org/</td>
+</tr>
+<tr>
+<td><strong>Bacillus  subtilis</strong></td>
+<td>http://dbtbs.hgc.jp/</td>
+</tr>
+<tr>
+<td><strong>Drosophila  melanogaster</strong></td>
+<td>http://www-biology.ucsd.edu/labs/Kadonaga/DCPD.html</td>
+</tr>
+<tr>
+<td><strong>E.  coli</strong></td>
+<td>http://arep.med.harvard.edu/ecoli_matrices/</td>
+</tr>
+<tr>
+<td><strong>Human</strong></td>
+<td>http://zlab.bu.edu/~mfrith/HPD.html</td>
+</tr>
+<tr>
+<td><strong>PlantProm</strong></td>
+<td>http://www.softberry.com/berry.phtml?topic=plantprom&amp;group=data&amp;subgroup=plantprom</td>
+</tr>
+<tr>
+<td><strong>Saccharomyces  cerevisiae</strong></td>
+<td>http://cgsigma.cshl.org/jian/</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>启动子结合位点分析</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PromoterScan</td>
+<td>http://bimas.dcrt.nih.gov:80/molbio/proscan/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Promoser</td>
+<td>http://biowulf.bu.edu/zlab/PromoSer/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Neural  Network Promoter Prediction</td>
+<td>http://www.fruitfly.org/seq_tools/promoter.html</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Softberry:  BPROM, TSSP, TSSG, TSSW</td>
+<td>http://www.softberry.com/berry.phtml?topic=index&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>MatInspector</td>
+<td>http://www.gene-regulation.de/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>RSAT</td>
+<td>http://rsat.ulb.ac.be/rsat/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>Cister</strong></td>
+<td>http://zlab.bu.edu/~mfrith/cister.shtml</td>
+<td><strong>Web</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>CpG  Island</strong> <strong>分析</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CpG  Island</td>
+<td>http://www.uscnorris.com/cpgislands2/cpg.aspx</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>CpG  finder</td>
+<td>http://www.softberry.com/berry.phtml?topic=cpgfinder&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>CpGPlot/CpGReport/Isochore</td>
+<td>http://www.ebi.ac.uk/emboss/cpgplot/index.html</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>转录终止信号预测</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POLYAH</td>
+<td>http://www.softberry.com/berry.phtml?topic=polyah&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>polyadq</td>
+<td>http://rulai.cshl.org/tools/polyadq/polyadq_form.html</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://maverickmao.github.io/Maverick.github.io/tag/OprJbnnB-/">
+            <span class="flex-auto">实验方法</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  生物信息学
+                </h3>
+              </a>
+            </div>
+          
+
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <script src="https://maverickmao.github.io/Maverick.github.io//media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+  </body>
+</html>

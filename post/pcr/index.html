@@ -1,0 +1,481 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maverick</title>
+<meta name="description" content="永怀善意，清澈明朗。" />
+<link rel="shortcut icon" href="https://maverickmao.github.io/Maverick.github.io//favicon.ico?v=1616983076593">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://maverickmao.github.io/Maverick.github.io//styles/main.css">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYQ1QNQB7Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CYQ1QNQB7Y');
+</script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://maverickmao.github.io/Maverick.github.io/">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://maverickmao.github.io/Maverick.github.io//images/avatar.png?v=1616983076593" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Maverick</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1">引物设计</a></li>
+<li><a href="#pcr%E5%AE%9E%E9%AA%8C%E6%93%8D%E4%BD%9C">PCR实验操作</a></li>
+<li><a href="#rt-pcr%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8">RT-PCR原理及应用</a></li>
+<li><a href="#rt-pcr%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1">RT-PCR引物设计</a></li>
+<li><a href="#rt-pcr%E5%AE%9E%E9%AA%8C%E6%93%8D%E4%BD%9C">RT-PCR实验操作</a></li>
+<li><a href="#rt-qpcr%E5%8E%9F%E7%90%86%E5%8F%8A%E7%9B%AE%E7%9A%84">RT-qPCR原理及目的</a></li>
+<li><a href="#rt-qpcr%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1%E5%8F%8A%E9%AA%8C%E8%AF%81">RT-qPCR引物设计及验证</a></li>
+<li><a href="#touch-down-pcr%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E7%A8%8B">Touch down PCR引物设计和编程</a></li>
+<li><a href="#touch-down-pcr%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90">Touch down PCR常见问题分析</a></li>
+<li><a href="#%E5%B7%A2%E5%BC%8Fpcr%E6%A6%82%E8%BF%B0">巢式PCR概述</a></li>
+<li><a href="#%E5%B7%A2%E5%BC%8Fpcr%E5%AE%9E%E9%AA%8C%E6%93%8D%E4%BD%9C">巢式PCR实验操作</a></li>
+<li><a href="#%E5%B7%A2%E5%BC%8Fpcr%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">巢式PCR常见问题</a></li>
+<li><a href="#pcr%E4%B8%AD%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E9%85%B6">PCR中常用工具酶</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="https://maverickmao.github.io/Maverick.github.io/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://maoresumes.netlify.app/" class="menu" style="animation-delay: 0.2s">
+          个人简介
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.6000000000000001s">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu" style="animation-delay: 0.8s">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700"></div>
+    <a class="rss" href="https://maverickmao.github.io/Maverick.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">PCR</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2021-03-29 / 6 min read
+        </div>
+        
+        <div class="post-content yue">
+          <h2 id="引物设计">引物设计</h2>
+<p><strong>一、引物设计</strong></p>
+<ol>
+<li>引物设计的基本原则</li>
+</ol>
+<ul>
+<li>模版序列信息</li>
+<li>实验目的（PCR产物）</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>RT-PCR、qRT-PCR</p>
+</li>
+<li>
+<p>根据实验目的确定引物位置、最终产物大小</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>引物的验证</li>
+</ul>
+<blockquote>
+<ul>
+<li>条带符合预期大小且清晰、无非特异性产物</li>
+</ul>
+</blockquote>
+<ul>
+<li>18-25bp</li>
+<li>相似的退火温度</li>
+<li>GC含量避免引物自身二级结构、发夹结构</li>
+<li>特异性</li>
+<li>特殊条件下的需要</li>
+</ul>
+<blockquote>
+<ul>
+<li>避免基因组污染，引物跨内含子或者位于外显子/外显子连接处</li>
+<li>尽量避免再SNPs区域设计引物，降低错配概率</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>非特异性扩增</li>
+</ol>
+<ul>
+<li>增加特异性方法：增加退火温度/降低Mg<sup>2+</sup></li>
+</ul>
+<ol start="3">
+<li>引物二聚体</li>
+</ol>
+<ul>
+<li>降低引物二聚体方法：加10%DMSO</li>
+</ul>
+<p><strong>二、常规菌落PCR引物设计</strong></p>
+<ol>
+<li>引物选择</li>
+</ol>
+<blockquote>
+<p>M13 fwd -- Insert fwd</p>
+<p>Insert fwd -- M13 fwd</p>
+</blockquote>
+<ol start="2">
+<li>实验设计</li>
+</ol>
+<blockquote>
+<p>设置阴性和阳性对照</p>
+<p>阴性：检测污染（用水）</p>
+<p>阳性：检测PCR是否正常（质粒）</p>
+</blockquote>
+<h2 id="pcr实验操作">PCR实验操作</h2>
+<p><strong>一、PCR实验设备</strong></p>
+<ol>
+<li>PCR仪器</li>
+<li>离心管</li>
+<li>微量移液枪（枪头）</li>
+<li>涡旋机</li>
+<li>离心机</li>
+</ol>
+<p><strong>二、PCR反应体系</strong></p>
+<ol>
+<li>模版DNA</li>
+</ol>
+<blockquote>
+<ul>
+<li>Genomic DNA,可以用于克隆基因序列或者检测基因突变(10pg~500ng)</li>
+<li>Plasmid DNA，克降目的序列或者菌落鉴定(10pg~100ng)</li>
+<li>cDNA，基因表达或者目的基因的克隆</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>dNTP(deoxy-ribonucleoside triphosphate)</li>
+</ol>
+<blockquote>
+<ul>
+<li>dNTP终浓度宜在20-200umol/L，过高可加快反应速度，但同时也増加出错率和 实验成本;过低则降低反应速度，但是可以提高实验的准确度。4种dNTP必须以等 摩尔浓度配制，以降低出错率，提高使用效率。(dATP:CTP:dGTP:dTTP=1:1:1:1)</li>
+<li>dNTP溶于pH为7.0的NaOH贮存液中,Stock solution 储存液为10mM,分装前-20'C冰箱;Working solution工作液为2mM dNTP</li>
+<li>4种dNTP必须等浓度配合以减少错配误差</li>
+</ul>
+</blockquote>
+<ol start="3">
+<li>DNA聚合酶</li>
+</ol>
+<blockquote>
+<p>聚合酵的性质是:</p>
+<ul>
+<li>需要模板和引物的存在;</li>
+<li>催化dNTP加到延伸中DNA链的3'-OH末端;</li>
+<li>催化DNA合成的方向是5'一3'。</li>
+<li>不同的DNA聚合鹂的错误率以及扩增的效率不同。</li>
+<li>Taq polymerase 是常见的DNA聚合酶。</li>
+</ul>
+<p>根据实验目的选择合适的DNA聚合酶</p>
+<ul>
+<li>普通PCR,用普通taq酶;</li>
+<li>准确率要求高的PCR, 选择高保真的DNA聚合酶;</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>PCR缓冲液</li>
+<li>引物</li>
+<li>H<sub>2</sub>O</li>
+</ol>
+<p><strong>三、试剂保存</strong></p>
+<ul>
+<li>模板DNA、dNTP、DNA聚合酶、PCR缓冲液、引物(-20℃)</li>
+<li>蒸馏水(25℃)</li>
+<li>实验前</li>
+</ul>
+<blockquote>
+<ul>
+<li>模板DNA、dNTP、PCR缓冲液、引物在4℃化冻15min(冰盒/冷藏室),H20冰上预冷:切勿用手捂热化</li>
+<li>等待管中试剂完全化冻后,混匀每管试剂之后,离心:切勿未彻底解冻而吸取部分溶液,导致溶液不均匀: 准备开始配制体系:</li>
+</ul>
+</blockquote>
+<ul>
+<li>实验中</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>尽可能在冰上操作:</p>
+</li>
+<li>
+<p>设置对照,包括阳性对照和阴性对照:</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>阴性对照是检测PCR体系是否正常工作</p>
+<p>若性对照的模板是plasmid ,则最后加入该模板。因为质粒模板可能形成气旋,造成污染</p>
+</li>
+<li>
+<p>一定要设置阴性对照,排除假阳性。</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>配制Mix以后,一定要混匀试剂,然后完成分装,分装好后离心</p>
+</li>
+<li>
+<p>正确使用移液枪,防止加样不准确换枪头,防止试剂污染</p>
+</li>
+<li>
+<p>对于其他聚合酶酶的PCR反应,按照说明书要求添加即可:</p>
+</li>
+<li>
+<p>确保PCR管盖盖好,防止反应过程中,试剂挥发</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>四、电泳检测</strong></p>
+<p>PCR产物的检测：</p>
+<ul>
+<li>凝胶融化充分,防止有小颗粒的存在</li>
+<li>根据PCR片段大小配制合适的凝胶,~200bp,配制1.2%-1.5%的凝胶:&gt;500bp,配制0.8%1.0%的凝胶</li>
+<li>根据实验目的选择合适的上样量:</li>
+<li>产物有无检测,加入loading buffer.,电泳100u,20-30min(片段大小),拍照观察,确定性菌落</li>
+<li>纯化回收,取5-10ul产物电泳,拍照观察,条带单一,则直接过柱子回收(如INested -PCr)</li>
+<li>胶回收,全部产物加入oading 电100V,日的片段收,建议采用刮胶回收:如果PCR的模板是plasmid 质粒,那么一定要选择胶回收目的片段,排除残质粒的污染</li>
+</ul>
+<h2 id="rt-pcr原理及应用">RT-PCR原理及应用</h2>
+<p><strong>一、RT-PCR原理:</strong></p>
+<p>提取组织或细胞中的总RNA,以其中的RNA作为模板,采用Oligo (d)、随机引物或者特异引物,利 用逆转录酶将RNA反转录成DNA.再以CDNA为模板进行PCR扩增,获得目的基因或检测基因表达。</p>
+<p><strong>二、RT-PCR应用</strong></p>
+<ol>
+<li>检测目的基因的表达水平(半定量PCR)<br>
+相比Real Time PCR</li>
+</ol>
+<blockquote>
+<ul>
+<li>操作繁琐,需要调试内参</li>
+<li>实验成本较低,RNA起始量低</li>
+<li>实验设备简单,一般实验室可完成,灵敏度高于Northern Blot</li>
+<li>PCR的最终产物反应基因的表达,高表达的基因可能在循环中后 期已经达到饱和,达不到判断表达量的目的;</li>
+<li>反应基因表达的趋势,不能确定具体的改变量</li>
+<li>适合前期差异基因的筛选,后续用Real Time PCR 做文章用图</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>目的基因的克隆;</li>
+</ol>
+<blockquote>
+<p>多用于基因功能研究中,CDS序列的获得,比如真核基因在原核系统中的表达、过表达载体的构建等</p>
+</blockquote>
+<ol start="3">
+<li>探针的获得(组织特异性检测)</li>
+</ol>
+<blockquote>
+<p>多用于在组织中检测对应基因的表达,比如SH的探针的准备</p>
+</blockquote>
+<h2 id="rt-pcr引物设计">RT-PCR引物设计</h2>
+<ol>
+<li>引物设计应遵循以下原则：</li>
+</ol>
+<blockquote>
+<p>引物长度:长度要求在15~30bp,常用为20bp左右。</p>
+<p>引物碱基构成:G+C含量55-80%。</p>
+<p>引物二级结构</p>
+<p>引物特异性好,避免引物与其它基因具有互补性。</p>
+<p>PCR产物长度,根据具体的实验目的而定。</p>
+</blockquote>
+<h2 id="rt-pcr实验操作">RT-PCR实验操作</h2>
+<h2 id="rt-qpcr原理及目的">RT-qPCR原理及目的</h2>
+<h2 id="rt-qpcr引物设计及验证">RT-qPCR引物设计及验证</h2>
+<h2 id="touch-down-pcr引物设计和编程">Touch down PCR引物设计和编程</h2>
+<h2 id="touch-down-pcr常见问题分析">Touch down PCR常见问题分析</h2>
+<h2 id="巢式pcr概述">巢式PCR概述</h2>
+<h2 id="巢式pcr实验操作">巢式PCR实验操作</h2>
+<h2 id="巢式pcr常见问题">巢式PCR常见问题</h2>
+<h2 id="pcr中常用工具酶">PCR中常用工具酶</h2>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://maverickmao.github.io/Maverick.github.io/tag/OprJbnnB-/">
+            <span class="flex-auto">实验方法</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+
+          
+            <div class="next-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/graphpad/">
+                <h3 class="post-title">
+                  GraphPad
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <script src="https://maverickmao.github.io/Maverick.github.io//media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+  </body>
+</html>

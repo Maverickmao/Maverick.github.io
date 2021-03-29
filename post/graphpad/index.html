@@ -25,7 +25,7 @@
 
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -39,41 +39,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            永怀善意，清澈明朗。
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/Maverickmao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-github-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://twitter.com/fdyemao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-twitter-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://weibo.com/u/5686272507" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-weibo-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -124,100 +92,184 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">GraphPad</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2021-03-29 / 2 min read
+        </div>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/pcr/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">PCR</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 6 min read</div>
-    </div>
-  </section>
+        <div class="post-content yue">
+          <p><strong>表格与图形对应的统计方法类型</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">统计类型</th>
+<th style="text-align:center">统计分析方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">XY</td>
+<td style="text-align:center">线性回归、非线性回归、相关分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Column</td>
+<td style="text-align:center">单样本t检验，配对t检验，成组t检验，单样本秩和检验，两组独立样 本秩和检验，多组独立样本秩和检验，单因素方差分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Grouped</td>
+<td style="text-align:center">多元方差分析，重复测量的方差分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Contingency</td>
+<td style="text-align:center">卡方检验，Fisher精确检验</td>
+</tr>
+<tr>
+<td style="text-align:center">Survival</td>
+<td style="text-align:center">单因素生存曲线比效</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Nonlinear regression</th>
+<th style="text-align:center">非线性拟合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Linear regression</td>
+<td style="text-align:center">线性回归</td>
+</tr>
+<tr>
+<td style="text-align:center">XY</td>
+<td style="text-align:center">连续变量间的关系</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Column statistics</td>
+<td style="text-align:center">正态性检验</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Correlation</td>
+<td style="text-align:center">相关分析</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">t test(and nonparametric tests)</th>
+<th style="text-align:center">t检验（含非参数检验）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">One-way ANOVA(and nonparametric)</td>
+<td style="text-align:center">单因素方差分析 (含非参数检验)</td>
+</tr>
+<tr>
+<td style="text-align:center">Column analysis</td>
+<td style="text-align:center">均数比较、ROC分析等</td>
+<td style="text-align:center">Column statistics</td>
+<td style="text-align:center">正态性检验</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ROC Curve</td>
+<td style="text-align:center">ROC分析</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Correlation</td>
+<td style="text-align:center">相关分析</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Two-way ANOVA</th>
+<th style="text-align:center">两因素方差分析 (含重复测量资料方差分析)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Grouped analysis</td>
+<td style="text-align:center">两因素方差分析等</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Three-way ANOVA</td>
+<td style="text-align:center">三因素方差分析（2* 2*2）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>图片导出</li>
+</ul>
+<blockquote>
+<p>File-----Export</p>
+<p>300ppi</p>
+</blockquote>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/graphpad/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">GraphPad</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
+        </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">实时荧光定量PCR原理与分析方法</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 5 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">石蜡切片</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://maverickmao.github.io/Maverick.github.io/tag/6s2iZeRZw/">
+            <span class="flex-auto">软件使用</span>
+          </a>
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 2 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">生物信息学</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 3 min read</div>
-    </div>
-  </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${5 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">基因分析</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-03-29 / 8 min read</div>
-    </div>
-  </section>
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/pcr/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  PCR
+                </h3>
+              </a>
+            </div>
+          
 
-        <div class="read-more">
+          
+            <div class="next-post">
+              <a href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
+                <h3 class="post-title">
+                  实时荧光定量PCR原理与分析方法
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
-  
-  
-</div>
 
-        </div>
+        
+
       </div>
     </div>
 

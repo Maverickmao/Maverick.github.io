@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maverickmao.github.io/Maverick.github.io/</id>
     <title>Maverick</title>
-    <updated>2021-03-20T05:53:45.390Z</updated>
+    <updated>2021-03-29T01:58:06.663Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maverickmao.github.io/Maverick.github.io/"/>
     <link rel="self" href="https://maverickmao.github.io/Maverick.github.io/atom.xml"/>
@@ -10,4 +10,1463 @@
     <logo>https://maverickmao.github.io/Maverick.github.io/images/avatar.png</logo>
     <icon>https://maverickmao.github.io/Maverick.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Maverick</rights>
+    <entry>
+        <title type="html"><![CDATA[PCR]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/pcr/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/pcr/">
+        </link>
+        <updated>2021-03-29T01:56:47.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="引物设计">引物设计</h2>
+<p><strong>一、引物设计</strong></p>
+<ol>
+<li>引物设计的基本原则</li>
+</ol>
+<ul>
+<li>模版序列信息</li>
+<li>实验目的（PCR产物）</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>RT-PCR、qRT-PCR</p>
+</li>
+<li>
+<p>根据实验目的确定引物位置、最终产物大小</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>引物的验证</li>
+</ul>
+<blockquote>
+<ul>
+<li>条带符合预期大小且清晰、无非特异性产物</li>
+</ul>
+</blockquote>
+<ul>
+<li>18-25bp</li>
+<li>相似的退火温度</li>
+<li>GC含量避免引物自身二级结构、发夹结构</li>
+<li>特异性</li>
+<li>特殊条件下的需要</li>
+</ul>
+<blockquote>
+<ul>
+<li>避免基因组污染，引物跨内含子或者位于外显子/外显子连接处</li>
+<li>尽量避免再SNPs区域设计引物，降低错配概率</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>非特异性扩增</li>
+</ol>
+<ul>
+<li>增加特异性方法：增加退火温度/降低Mg<sup>2+</sup></li>
+</ul>
+<ol start="3">
+<li>引物二聚体</li>
+</ol>
+<ul>
+<li>降低引物二聚体方法：加10%DMSO</li>
+</ul>
+<p><strong>二、常规菌落PCR引物设计</strong></p>
+<ol>
+<li>引物选择</li>
+</ol>
+<blockquote>
+<p>M13 fwd -- Insert fwd</p>
+<p>Insert fwd -- M13 fwd</p>
+</blockquote>
+<ol start="2">
+<li>实验设计</li>
+</ol>
+<blockquote>
+<p>设置阴性和阳性对照</p>
+<p>阴性：检测污染（用水）</p>
+<p>阳性：检测PCR是否正常（质粒）</p>
+</blockquote>
+<h2 id="pcr实验操作">PCR实验操作</h2>
+<p><strong>一、PCR实验设备</strong></p>
+<ol>
+<li>PCR仪器</li>
+<li>离心管</li>
+<li>微量移液枪（枪头）</li>
+<li>涡旋机</li>
+<li>离心机</li>
+</ol>
+<p><strong>二、PCR反应体系</strong></p>
+<ol>
+<li>模版DNA</li>
+</ol>
+<blockquote>
+<ul>
+<li>Genomic DNA,可以用于克隆基因序列或者检测基因突变(10pg~500ng)</li>
+<li>Plasmid DNA，克降目的序列或者菌落鉴定(10pg~100ng)</li>
+<li>cDNA，基因表达或者目的基因的克隆</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>dNTP(deoxy-ribonucleoside triphosphate)</li>
+</ol>
+<blockquote>
+<ul>
+<li>dNTP终浓度宜在20-200umol/L，过高可加快反应速度，但同时也増加出错率和 实验成本;过低则降低反应速度，但是可以提高实验的准确度。4种dNTP必须以等 摩尔浓度配制，以降低出错率，提高使用效率。(dATP:CTP:dGTP:dTTP=1:1:1:1)</li>
+<li>dNTP溶于pH为7.0的NaOH贮存液中,Stock solution 储存液为10mM,分装前-20'C冰箱;Working solution工作液为2mM dNTP</li>
+<li>4种dNTP必须等浓度配合以减少错配误差</li>
+</ul>
+</blockquote>
+<ol start="3">
+<li>DNA聚合酶</li>
+</ol>
+<blockquote>
+<p>聚合酵的性质是:</p>
+<ul>
+<li>需要模板和引物的存在;</li>
+<li>催化dNTP加到延伸中DNA链的3'-OH末端;</li>
+<li>催化DNA合成的方向是5'一3'。</li>
+<li>不同的DNA聚合鹂的错误率以及扩增的效率不同。</li>
+<li>Taq polymerase 是常见的DNA聚合酶。</li>
+</ul>
+<p>根据实验目的选择合适的DNA聚合酶</p>
+<ul>
+<li>普通PCR,用普通taq酶;</li>
+<li>准确率要求高的PCR, 选择高保真的DNA聚合酶;</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>PCR缓冲液</li>
+<li>引物</li>
+<li>H<sub>2</sub>O</li>
+</ol>
+<p><strong>三、试剂保存</strong></p>
+<ul>
+<li>模板DNA、dNTP、DNA聚合酶、PCR缓冲液、引物(-20℃)</li>
+<li>蒸馏水(25℃)</li>
+<li>实验前</li>
+</ul>
+<blockquote>
+<ul>
+<li>模板DNA、dNTP、PCR缓冲液、引物在4℃化冻15min(冰盒/冷藏室),H20冰上预冷:切勿用手捂热化</li>
+<li>等待管中试剂完全化冻后,混匀每管试剂之后,离心:切勿未彻底解冻而吸取部分溶液,导致溶液不均匀: 准备开始配制体系:</li>
+</ul>
+</blockquote>
+<ul>
+<li>实验中</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>尽可能在冰上操作:</p>
+</li>
+<li>
+<p>设置对照,包括阳性对照和阴性对照:</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>阴性对照是检测PCR体系是否正常工作</p>
+<p>若性对照的模板是plasmid ,则最后加入该模板。因为质粒模板可能形成气旋,造成污染</p>
+</li>
+<li>
+<p>一定要设置阴性对照,排除假阳性。</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>配制Mix以后,一定要混匀试剂,然后完成分装,分装好后离心</p>
+</li>
+<li>
+<p>正确使用移液枪,防止加样不准确换枪头,防止试剂污染</p>
+</li>
+<li>
+<p>对于其他聚合酶酶的PCR反应,按照说明书要求添加即可:</p>
+</li>
+<li>
+<p>确保PCR管盖盖好,防止反应过程中,试剂挥发</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>四、电泳检测</strong></p>
+<p>PCR产物的检测：</p>
+<ul>
+<li>凝胶融化充分,防止有小颗粒的存在</li>
+<li>根据PCR片段大小配制合适的凝胶,~200bp,配制1.2%-1.5%的凝胶:&gt;500bp,配制0.8%1.0%的凝胶</li>
+<li>根据实验目的选择合适的上样量:</li>
+<li>产物有无检测,加入loading buffer.,电泳100u,20-30min(片段大小),拍照观察,确定性菌落</li>
+<li>纯化回收,取5-10ul产物电泳,拍照观察,条带单一,则直接过柱子回收(如INested -PCr)</li>
+<li>胶回收,全部产物加入oading 电100V,日的片段收,建议采用刮胶回收:如果PCR的模板是plasmid 质粒,那么一定要选择胶回收目的片段,排除残质粒的污染</li>
+</ul>
+<h2 id="rt-pcr原理及应用">RT-PCR原理及应用</h2>
+<p><strong>一、RT-PCR原理:</strong></p>
+<p>提取组织或细胞中的总RNA,以其中的RNA作为模板,采用Oligo (d)、随机引物或者特异引物,利 用逆转录酶将RNA反转录成DNA.再以CDNA为模板进行PCR扩增,获得目的基因或检测基因表达。</p>
+<p><strong>二、RT-PCR应用</strong></p>
+<ol>
+<li>检测目的基因的表达水平(半定量PCR)<br>
+相比Real Time PCR</li>
+</ol>
+<blockquote>
+<ul>
+<li>操作繁琐,需要调试内参</li>
+<li>实验成本较低,RNA起始量低</li>
+<li>实验设备简单,一般实验室可完成,灵敏度高于Northern Blot</li>
+<li>PCR的最终产物反应基因的表达,高表达的基因可能在循环中后 期已经达到饱和,达不到判断表达量的目的;</li>
+<li>反应基因表达的趋势,不能确定具体的改变量</li>
+<li>适合前期差异基因的筛选,后续用Real Time PCR 做文章用图</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>目的基因的克隆;</li>
+</ol>
+<blockquote>
+<p>多用于基因功能研究中,CDS序列的获得,比如真核基因在原核系统中的表达、过表达载体的构建等</p>
+</blockquote>
+<ol start="3">
+<li>探针的获得(组织特异性检测)</li>
+</ol>
+<blockquote>
+<p>多用于在组织中检测对应基因的表达,比如SH的探针的准备</p>
+</blockquote>
+<h2 id="rt-pcr引物设计">RT-PCR引物设计</h2>
+<ol>
+<li>引物设计应遵循以下原则：</li>
+</ol>
+<blockquote>
+<p>引物长度:长度要求在15~30bp,常用为20bp左右。</p>
+<p>引物碱基构成:G+C含量55-80%。</p>
+<p>引物二级结构</p>
+<p>引物特异性好,避免引物与其它基因具有互补性。</p>
+<p>PCR产物长度,根据具体的实验目的而定。</p>
+</blockquote>
+<h2 id="rt-pcr实验操作">RT-PCR实验操作</h2>
+<h2 id="rt-qpcr原理及目的">RT-qPCR原理及目的</h2>
+<h2 id="rt-qpcr引物设计及验证">RT-qPCR引物设计及验证</h2>
+<h2 id="touch-down-pcr引物设计和编程">Touch down PCR引物设计和编程</h2>
+<h2 id="touch-down-pcr常见问题分析">Touch down PCR常见问题分析</h2>
+<h2 id="巢式pcr概述">巢式PCR概述</h2>
+<h2 id="巢式pcr实验操作">巢式PCR实验操作</h2>
+<h2 id="巢式pcr常见问题">巢式PCR常见问题</h2>
+<h2 id="pcr中常用工具酶">PCR中常用工具酶</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GraphPad]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/graphpad/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/graphpad/">
+        </link>
+        <updated>2021-03-29T01:55:58.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>表格与图形对应的统计方法类型</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">统计类型</th>
+<th style="text-align:center">统计分析方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">XY</td>
+<td style="text-align:center">线性回归、非线性回归、相关分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Column</td>
+<td style="text-align:center">单样本t检验，配对t检验，成组t检验，单样本秩和检验，两组独立样 本秩和检验，多组独立样本秩和检验，单因素方差分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Grouped</td>
+<td style="text-align:center">多元方差分析，重复测量的方差分析</td>
+</tr>
+<tr>
+<td style="text-align:center">Contingency</td>
+<td style="text-align:center">卡方检验，Fisher精确检验</td>
+</tr>
+<tr>
+<td style="text-align:center">Survival</td>
+<td style="text-align:center">单因素生存曲线比效</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Nonlinear regression</th>
+<th style="text-align:center">非线性拟合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Linear regression</td>
+<td style="text-align:center">线性回归</td>
+</tr>
+<tr>
+<td style="text-align:center">XY</td>
+<td style="text-align:center">连续变量间的关系</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Column statistics</td>
+<td style="text-align:center">正态性检验</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Correlation</td>
+<td style="text-align:center">相关分析</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">t test(and nonparametric tests)</th>
+<th style="text-align:center">t检验（含非参数检验）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">One-way ANOVA(and nonparametric)</td>
+<td style="text-align:center">单因素方差分析 (含非参数检验)</td>
+</tr>
+<tr>
+<td style="text-align:center">Column analysis</td>
+<td style="text-align:center">均数比较、ROC分析等</td>
+<td style="text-align:center">Column statistics</td>
+<td style="text-align:center">正态性检验</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ROC Curve</td>
+<td style="text-align:center">ROC分析</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Correlation</td>
+<td style="text-align:center">相关分析</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Two-way ANOVA</th>
+<th style="text-align:center">两因素方差分析 (含重复测量资料方差分析)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Grouped analysis</td>
+<td style="text-align:center">两因素方差分析等</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Three-way ANOVA</td>
+<td style="text-align:center">三因素方差分析（2* 2*2）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>图片导出</li>
+</ul>
+<blockquote>
+<p>File-----Export</p>
+<p>300ppi</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[实时荧光定量PCR原理与分析方法]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/shi-shi-ying-guang-ding-liang-pcr-yuan-li-yu-fen-xi-fang-fa/">
+        </link>
+        <updated>2021-03-29T01:54:16.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="荧光定量pcr概述">荧光定量PCR概述</h2>
+<h3 id="如何实现监控信号">如何实现监控信号</h3>
+<ul>
+<li>在PCR体系中添加某种可发光的物质</li>
+<li>信号检测仪器 -qPCR仪<br>
+**化学原理:**荧光报告分子是检测的基础</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">SYBR Green染料法</th>
+<th style="text-align:center">Taqman探针法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">结构</td>
+<td style="text-align:center">嵌合型核酸染料</td>
+<td style="text-align:center">5'R---Q3‘</td>
+</tr>
+<tr>
+<td style="text-align:center">优势</td>
+<td style="text-align:center">成本低、有溶解曲线生成</td>
+<td style="text-align:center">特异性高、低丰度基因定量可信度高</td>
+</tr>
+<tr>
+<td style="text-align:center">劣势</td>
+<td style="text-align:center">特异性较Taqman低</td>
+<td style="text-align:center">成本高 引物二聚体的形成，无法直观判定</td>
+</tr>
+<tr>
+<td style="text-align:center">应用</td>
+<td style="text-align:center">SNP分型、表达量分析、基因突变检测、病原菌检测</td>
+<td style="text-align:center">病毒检测、病毒载量检测、基因分型、 基因突变检测、SNP分型、表达量分析等</td>
+</tr>
+</tbody>
+</table>
+<h3 id="光信号-数字信息处理的可靠性">光信号、数字信息处理的可靠性</h3>
+<ul>
+<li>特异性分析</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>溶解曲线</p>
+</li>
+<li>
+<p>避免非特异性扩增，单一产物</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>标准曲线分析</li>
+</ul>
+<blockquote>
+<ul>
+<li>扩增效率、线性检测范围、检测下限、R2、重复性</li>
+</ul>
+</blockquote>
+<ul>
+<li>仪器设置</li>
+</ul>
+<blockquote>
+<ul>
+<li>基线、阈值</li>
+<li>Rox Reference Dye</li>
+</ul>
+</blockquote>
+<h3 id="qpcr能够解决什么问题">qPCR能够解决什么问题</h3>
+<ul>
+<li>定性研究</li>
+</ul>
+<blockquote>
+<ul>
+<li>通过溶解曲线或探针判定扩增子产物类型，可用于基因分型或SNP分型等。</li>
+</ul>
+</blockquote>
+<ul>
+<li>定量研究</li>
+</ul>
+<blockquote>
+<ul>
+<li>相对定量:基因表达量差异，如测序数据的验证</li>
+<li>绝对定量:基因拷贝数/基因浓度，病毒滴度测定</li>
+</ul>
+</blockquote>
+<h3 id="qpcr有别于pcr之处">qPCR有别于PCR之处</h3>
+<ul>
+<li>qPCR技术的出现是为了解决常规PCR无法解决不了的问题_基因定量</li>
+<li>qPCR有别于PCR基因定量的真实依据是:指数扩增期。</li>
+<li>术语:扩增曲线、溶解曲线、标准曲线、Ct值、Tm值等。</li>
+</ul>
+<hr>
+<h2 id="实验安排与数据分析">实验安排与数据分析</h2>
+<h3 id="qpcr的实验安排">qPCR的实验安排</h3>
+<ul>
+<li>引物设计</li>
+</ul>
+<blockquote>
+<ul>
+<li>标准曲线评估扩增效率</li>
+<li>NTC评估引物二聚体</li>
+<li>引物设计原则</li>
+</ul>
+</blockquote>
+<ul>
+<li>核酸提取</li>
+</ul>
+<blockquote>
+<ul>
+<li>完整性</li>
+<li>NRC纯度分析</li>
+</ul>
+</blockquote>
+<ul>
+<li>反转录</li>
+</ul>
+<blockquote>
+<ul>
+<li>RNA二级结构、反转录效率</li>
+</ul>
+</blockquote>
+<ul>
+<li>qPCR定量</li>
+</ul>
+<blockquote>
+<ul>
+<li>内参基因选择</li>
+<li>相对定量原则</li>
+</ul>
+</blockquote>
+<h3 id="引物设计">引物设计</h3>
+<ul>
+<li>引物扩增效率评估</li>
+</ul>
+<blockquote>
+<ol>
+<li>标准品制备</li>
+<li>标准品稀释</li>
+<li>qPCR扩增</li>
+<li>标准曲线</li>
+</ol>
+</blockquote>
+<ul>
+<li>
+<p>NTC评估引物二聚体</p>
+<blockquote>
+<p>Tips: NTC污染解决方案</p>
+<ol>
+<li>确认NTC信号来源: 引物二聚体、体系中污染靶标分子</li>
+<li>解决方案 调整引物浓度、单一变量确认污染源</li>
+<li>PCR标准: NTC熔解曲线和扩增曲线无荧光值变化，即Ct值为0，无扩增出现。 若有污染，可接受范围: Ct(NTC) - Ct(最低浓度)25。根据经验，NTC Ct值常见范围: &gt;30</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="引物设计原则">引物设计原则</h3>
+<ul>
+<li>扩增效率相关要求</li>
+</ul>
+<blockquote>
+<ul>
+<li>扩增子大小80-200bp</li>
+<li>引物长度20bp左右</li>
+<li>GC含量40-60%</li>
+<li>避免出现连续4个相同碱基</li>
+<li>避免引物出现二级复杂结构</li>
+<li>3'端G</li>
+<li>上下游引物Tm值接近，建议60’C+-2C</li>
+</ul>
+</blockquote>
+<ul>
+<li>特异性相关要求</li>
+</ul>
+<blockquote>
+<ul>
+<li>设计跨内含子引物</li>
+<li>避免引物3'端出现互补</li>
+<li>Blast保证保守性</li>
+</ul>
+</blockquote>
+<ul>
+<li>相关软件推荐:</li>
+</ul>
+<blockquote>
+<ul>
+<li>Primer3</li>
+<li>MFold (<a href="http://mfold.rna.albany.edu">http://mfold.rna.albany.edu</a>)</li>
+<li>BLAST (<a href="http://blast.ncbi.nlm.nih.gov/">http://blast.ncbi.nlm.nih.gov/</a>)</li>
+</ul>
+</blockquote>
+<h3 id="rna质量">RNA质量</h3>
+<ul>
+<li>RNA完整度</li>
+</ul>
+<blockquote>
+<ul>
+<li>RIN值 (RNA integrity number ): RIN&gt;7为高质量，6-7勉强可用，&lt;6为较差质量。</li>
+<li>该值可用Agilent 2100 Bioanalyzer仪器去检测</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>RNA纯度: gDNA污染问题</p>
+<blockquote>
+<p>Tips: NRC染解决方案</p>
+<ol>
+<li>确认NRC信号来源: RNA提取过程中污染gDNA</li>
+<li>解决方案：RNA电泳，判定RNA质量;逆转录之前或过程中，或定量过程中，去除gDNA污染。</li>
+<li>qPCR标准;不能容忍有gDNA污染</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="逆转录">逆转录</h3>
+<ul>
+<li>
+<p>RNA二级结构、逆转录酶、逆转录引物</p>
+<blockquote>
+<ol>
+<li>逆转录酶对cDNA产量的影响</li>
+<li>具备耐热性能的逆转录酶可用于复杂二级结构RNA和一步法 RT-qPCR</li>
+<li>逆转录引物对cDNA产量的影响</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p>逆转录效率</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>逆转录基因的均一性</li>
+<li>线性检测范围</li>
+<li>R<sup>2</sup></li>
+<li>灵敏度</li>
+</ul>
+</blockquote>
+<h3 id="ct值的计算">Ct值的计算</h3>
+<ul>
+<li>相对定量原则:内参基因和目的基因的扩增效率接近，且接近100%。</li>
+</ul>
+<blockquote>
+<ul>
+<li>第1种情况. 内参和目的基因扩增效率一致，且接近100%</li>
+<li>第2种情况. 内参和目的基因扩增效率有差异</li>
+</ul>
+</blockquote>
+<h3 id="操作流程">操作流程</h3>
+<p>RNA样品——gDNA去除后的RNA——cDNA——q PCR</p>
+<hr>
+<h2 id="常见问题">常见问题</h2>
+<h3 id="问题1筛选qpcr试剂唯c值论">问题1:筛选qPCR试剂，唯C值论?</h3>
+<ul>
+<li>试剂性能评测指标</li>
+</ul>
+<blockquote>
+<p>样本类型、基因长度和GC合量、数量</p>
+<ul>
+<li>检出率</li>
+<li>特异性</li>
+<li>扩增效率与灵敏度:高、中、低表达量、内参</li>
+<li>重复性</li>
+<li>精准性</li>
+</ul>
+</blockquote>
+<ul>
+<li>体验度指标</li>
+</ul>
+<blockquote>
+<ul>
+<li>操作简便性:组分情况、颜色、适用仪器、体系配制、引物设计</li>
+<li>反应时间</li>
+<li>试剂稳定性</li>
+<li>重复性</li>
+<li>体系稳定性</li>
+</ul>
+</blockquote>
+<h3 id="问题2-ct值偏大">问题2: Ct值偏大</h3>
+<ul>
+<li>
+<p>解决方案:</p>
+<blockquote>
+<ol>
+<li>提高模板浓度，或重新制备模板 (模板降解)</li>
+<li>优化扩增程序，或重新设计引物(引物扩增效率低)</li>
+<li>PCR产物在100-300bp之间(扩增效率低)</li>
+<li>提高模板稀释倍数或重新制备模板(模板质量低)</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[石蜡切片]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/shi-zha-qie-pian/">
+        </link>
+        <updated>2021-03-29T01:53:16.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="取材">取材</h2>
+<ul>
+<li>注意事项</li>
+</ul>
+<blockquote>
+<p>1.锋利的取材刀<br>
+2.取材要及时,固定要及时<br>
+3.管腔组织如胃肠组织,应先平展于滤纸上粘着以后 慢慢放入固定液中<br>
+4.微量标本、易碎标本处理<br>
+5.组织内的钙化病灶或骨质,应在充分固定后进行脱钙,组织内的非病理异物应予剔除<br>
+6.对于病理材料,除病变部位外,还要切取病变和正 常组织交界的区域,以利于对比观察分析<br>
+7.注明取材时间、组织名称、组织块数量等基本信息以备查</p>
+</blockquote>
+<h2 id="切片">切片</h2>
+<ul>
+<li>切片</li>
+</ul>
+<blockquote>
+<p>1.室温过高时,可将修好的蜡块放到冰盒上冷却一定时间,用冰块冷却刀和组 织块,减少刀与组织块在过程中产生的热,使石蜡保持合适的硬度以利于切片<br>
+2.切片时要及时清洁刀口、除去蜡屑,否则易引起破碎;<br>
+3.切片时摇动旋转轮速度不可过快,用力应均匀平稳,以40-60r/min为宜;<br>
+4.切片厚度为3-5um</p>
+</blockquote>
+<ul>
+<li>展片</li>
+</ul>
+<blockquote>
+<p>切片经30%的乙醇初展,再用载玻片捞起蜡带放入摊片机水盒内(一般46℃左右)</p>
+</blockquote>
+<ul>
+<li>贴片</li>
+</ul>
+<blockquote>
+<p>待切片在恒温水内充分推开展平后,将载玻片垂直插入水中以毛面轻靠切片 井用毛笔将切片一边披于玻片上,随即将玻片直立提起,避免气泡快!</p>
+</blockquote>
+<ul>
+<li>烤片</li>
+</ul>
+<blockquote>
+<p>石蜡切片在60-65℃烤片60-120min</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[生物信息学]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/sheng-wu-xin-xi-xue/">
+        </link>
+        <updated>2021-03-29T01:50:50.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-ncbi及genbank介绍">一、NCBI及GenBank介绍</h3>
+<p><strong>NCBI</strong>（National Center for Biotechnology Information）</p>
+<p><strong>链接：</strong></p>
+<blockquote>
+<ul>
+<li>
+<p>NCBI(<a href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>)</p>
+</li>
+<li>
+<p>BLAST(<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a>)</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="二-如何检索">二、如何检索</h3>
+<ol>
+<li>Entrez Nucleotide(<a href="https://www.ncbi.nlm.nih.gov/nucleotide/">https://www.ncbi.nlm.nih.gov/nucleotide/</a>)</li>
+<li>Blast</li>
+<li>NCBI e-utilities</li>
+<li>FTP:(<a href="ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1">ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1</a>)(<a href="ftp://ftp.ncbi.nlm.nih.gov/genbank">ftp://ftp.ncbi.nlm.nih.gov/genbank</a>)</li>
+</ol>
+<h4 id="一-entrez">（一）、Entrez</h4>
+<blockquote>
+<ul>
+<li>用以整合NCBI数据库中信息的搜寻和检索工具</li>
+<li>同时也提供序列和染色体图谱的图形视图。</li>
+<li>这些数据库包括核酸序列，蛋白序列，大分子结构，全基因组，和通过PubMed检索的MEDLINE</li>
+<li>Entrez的一个强大和独特的特点是检索相关的序列，结构，和参考文献的能力。</li>
+<li>参考文献通过PubMed获得</li>
+</ul>
+</blockquote>
+<h5 id="1-基本检索功能">1、基本检索功能</h5>
+<p><code>Tips：其余数据库检索基本通用</code></p>
+<ol>
+<li>限定词检索</li>
+</ol>
+<blockquote>
+<ul>
+<li>
+<p>protein name : insulin</p>
+</li>
+<li>
+<p>gene name, or gene symbol : p53,CREB1</p>
+</li>
+<li>
+<p>Species name: homo sapien</p>
+</li>
+<li>
+<p>a submitter or author name in the following format will produce the best results.</p>
+<blockquote>
+<p>Smith JR (last name followed by initials, no punctuation)</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><em><strong>检索限定词</strong></em></li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>基因名称的检索限定词:[GENE] or [GENE NAME]</p>
+</li>
+<li>
+<p>生物体名称的检索限定词:[ORGN] or [ORGANISM|</p>
+</li>
+<li>
+<p>作者姓名的检索限定词:[AUTH] or [AUTHOR]</p>
+<blockquote>
+<p>格式：gene name[GENEJ AND human[ORGN]</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><em><strong>逻辑操作符</strong></em></li>
+</ul>
+<blockquote>
+<p>与:AND</p>
+<blockquote>
+<p>contactin AND neurofascin</p>
+</blockquote>
+<p>或:OR</p>
+<blockquote>
+<p>contactin OR neurofascin</p>
+</blockquote>
+<p>非:NOT</p>
+<blockquote>
+<p>contactin NOT neurofascin</p>
+</blockquote>
+</blockquote>
+<ol start="2">
+<li>特殊标识符检索(ACCESSION, Gl)</li>
+</ol>
+<blockquote>
+<ul>
+<li>基因信息号(G1)</li>
+</ul>
+<blockquote>
+<p>为一串数字，如6995995</p>
+</blockquote>
+<ul>
+<li>Accession number:</li>
+</ul>
+<blockquote>
+<ul>
+<li>a) GenBank/EMBL/DDB J序列接受号</li>
+</ul>
+<blockquote>
+<p>1个字母+5个数字 如U12345</p>
+<p>2个字母+6个数字 如AY12345</p>
+</blockquote>
+<ul>
+<li>b)PDB序列接受号</li>
+</ul>
+<blockquote>
+<p>1个数字+3个字母 如1TUP</p>
+</blockquote>
+<ul>
+<li>c) Refseq 序列号</li>
+</ul>
+<blockquote>
+<p><a href="https://www.ncbi.nlm.nih.gov/genbank/samplerecord/">https://www.ncbi.nlm.nih.gov/genbank/samplerecord/</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>
+<p>特定短语</p>
+</li>
+<li>
+<p>范围检索</p>
+</li>
+</ol>
+<ul>
+<li>序列接收号范围检索:</li>
+</ul>
+<blockquote>
+<p>AF114696:AF114714[ACCN]</p>
+<p>序列接收号的检索限定词为[ACCN]或者[ACCESSION]</p>
+</blockquote>
+<ul>
+<li>序列长度范围检索</li>
+</ul>
+<blockquote>
+<p>3000:4000[SLEN]</p>
+</blockquote>
+<ul>
+<li>日期范围检索</li>
+</ul>
+<blockquote>
+<p>2012/01: 2015/12/31[MDAT] or [PDAT]</p>
+</blockquote>
+<ol start="5">
+<li>高级检索</li>
+</ol>
+<hr>
+<h3 id="解释检索结果">解释检索结果</h3>
+<hr>
+<h3 id="下载选定结果">下载选定结果</h3>
+<hr>
+<h3 id="ncbi其他资源介绍">NCBI其他资源介绍</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基因分析]]></title>
+        <id>https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/</id>
+        <link href="https://maverickmao.github.io/Maverick.github.io/post/ji-yin-fen-xi/">
+        </link>
+        <updated>2021-03-29T01:48:01.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>启动子分析</li>
+</ol>
+<ul>
+<li>Promoter 2.0进行启动子区的预测分析</li>
+<li>PLACE 与PlantCARE顺式调控元件的预测</li>
+<li>Neural Network Promoter Prediction[http://www.fruitfly.org/seq_tools/promoter.html]预测基因的启动子序列</li>
+<li>[https://www.ncbi.nlm.nih.gov/orffinder/]预测基因的启动子序列</li>
+<li>[https://flute-tulip-rg2y.squarespace.com/]开放式阅读框分析，预测基因的启动子序列，并分析外显子和内含子序列</li>
+<li>利用Protparam 工具预测蛋白的基本理化性质。[https://www.expasy.org/resources/protparam]</li>
+<li>利用BioEdit分析疏水性。</li>
+</ul>
+<ol start="2">
+<li>跨膜区分析</li>
+</ol>
+<ul>
+<li>利用依靠跨膜蛋白数据库Tmbase的TMpred工具分析蛋白的跨膜区和跨膜方向。</li>
+</ul>
+<ol start="3">
+<li>二级结构分析</li>
+</ol>
+<ul>
+<li>[http://www.predictprotein.org] 预测蛋白二级结构</li>
+</ul>
+<ol start="4">
+<li>结构域分析</li>
+</ol>
+<ul>
+<li>InterProScan[http://www.ebi.ac.uk/interpro/search/sequence/]进行结构域分析。</li>
+</ul>
+<ol start="5">
+<li>3d结构预测</li>
+</ol>
+<ul>
+<li>同源建模的分析工具SWISS-MODEL[https://www.expasy.org/resources/swiss-model-workspace]进行3-D结构预测。不同物种间clc蛋白同源性比较及进化分析</li>
+</ul>
+<ol start="6">
+<li>
+<p>基因预测</p>
+</li>
+<li>
+<p>跨膜区分析</p>
+</li>
+</ol>
+<ul>
+<li>依靠跨膜蛋白数据库Tmbase的 TMpred工具分析蛋白的跨膜区和跨膜方向。</li>
+</ul>
+<ol start="8">
+<li>二级结构分析</li>
+</ol>
+<ul>
+<li>Bio-informatique Lyonnais 的蛋白质分析网络（Network Protein Secquence Analysis）GOR4程序[https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=npsa_gor4.html]预测蛋白二级结构</li>
+</ul>
+<ol start="9">
+<li>结构域分析</li>
+</ol>
+<ul>
+<li>InterProScan[http://www.ebi.ac.uk/interpro/search/sequence/]进行结构域分析</li>
+</ul>
+<ol start="10">
+<li>空间结构预测</li>
+</ol>
+<ul>
+<li>同源建模的分析工具SWISS-MODEL进行空间结构预测[https://www.expasy.org/]</li>
+</ul>
+<hr>
+<table>
+<thead>
+<tr>
+<th>程序名</th>
+<th>搜索序列</th>
+<th>数据库</th>
+<th>内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>blastp</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>比较氨基酸序列与蛋白质数据库</strong></td>
+<td>使用取代矩阵寻找较远的关系，进行SEG过滤</td>
+</tr>
+<tr>
+<td><strong>blastn</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较核酸序列与核酸数据库</strong></td>
+<td>寻找较高分值的匹配，对较远的关系不太适用</td>
+</tr>
+<tr>
+<td><strong>blastx</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>比较核酸序列理论上的六框架的所有转换结果和蛋白质数据库</strong></td>
+<td>用于新的DNA序列和ESTs的分析，可转译搜索序列</td>
+</tr>
+<tr>
+<td><strong>tblastn</strong></td>
+<td><strong>Protein</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较蛋白质序列和核酸序列数据库，动态转换为六框架结果</strong></td>
+<td>用于寻找数据库中没有标注的编码区，可转译数据库序列</td>
+</tr>
+<tr>
+<td><strong>tblastx</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>Nucleotide</strong></td>
+<td><strong>比较核酸序列和核酸序列数据库，经过两次动态转换为六框架结果</strong></td>
+<td>转译搜索序列与数据库序列</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>软件</th>
+<th>网址</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClustalX</td>
+<td>http://bips.u-strasbg.fr/fr/Documentation/ClustalX/</td>
+<td>图形化的多序列比对工具</td>
+</tr>
+<tr>
+<td>ClustalW</td>
+<td>http://www.cf.ac.uk/biosi/research/biosoft/Downloads/clustalw.html</td>
+<td>命令行格式的多序列比对工具</td>
+</tr>
+<tr>
+<td>GeneDoc</td>
+<td>http://www.psc.edu/biomed/genedoc/</td>
+<td>多序列比对结果的美化工具</td>
+</tr>
+<tr>
+<td>BioEdit</td>
+<td>http://www.mbio.ncsu.edu/BioEdit/bioedit.html</td>
+<td>序列分析的综合工具</td>
+</tr>
+<tr>
+<td>MEGA</td>
+<td>http://www.megasoftware.net/</td>
+<td>图形化、集成的进化分析工具，不包括ML</td>
+</tr>
+<tr>
+<td>PAUP</td>
+<td>http://paup.csit.fsu.edu/</td>
+<td>商业软件，集成的进化分析工具</td>
+</tr>
+<tr>
+<td>PHYLIP</td>
+<td>http://evolution.genetics.washington.edu/phylip.html</td>
+<td>免费的、集成的进化分析工具</td>
+</tr>
+<tr>
+<td>PHYML</td>
+<td>http://atgc.lirmm.fr/phyml/</td>
+<td>最快的ML建树工具</td>
+</tr>
+<tr>
+<td>PAML</td>
+<td>http://abacus.gene.ucl.ac.uk/software/paml.html</td>
+<td>ML建树工具</td>
+</tr>
+<tr>
+<td>Tree-puzzle</td>
+<td>http://www.tree-puzzle.de/</td>
+<td>较快的ML建树工具</td>
+</tr>
+<tr>
+<td>MrBayes</td>
+<td>http://mrbayes.csit.fsu.edu/</td>
+<td>基于贝叶斯方法的建树工具</td>
+</tr>
+<tr>
+<td>MAC5</td>
+<td>http://www.agapow.net/software/mac5/</td>
+<td>基于贝叶斯方法的建树工具</td>
+</tr>
+<tr>
+<td>TreeView</td>
+<td>http://taxonomy.zoology.gla.ac.uk/rod/treeview.html</td>
+<td>进化树显示工具</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>基因开放阅读框</strong>/<strong>基因结构分析识别工具</strong></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ORF  Finder</strong></td>
+<td>http://www.ncbi.nlm.nih.gov/gorf/gorf.html</td>
+<td>NCBI</td>
+<td>通用</td>
+</tr>
+<tr>
+<td><strong>BestORF</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>真核</td>
+</tr>
+<tr>
+<td><strong>GENSCAN</strong></td>
+<td>http://genes.mit.edu/GENSCAN.html</td>
+<td><strong>MIT</strong></td>
+<td><strong>脊椎、拟南芥、玉米</strong></td>
+</tr>
+<tr>
+<td><strong>Gene  Finder</strong></td>
+<td>http://rulai.cshl.org/tools/genefinder/</td>
+<td>Zhang  lab</td>
+<td>人、小鼠、拟南芥、酵母</td>
+</tr>
+<tr>
+<td><strong>FGENESH</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>真核</td>
+</tr>
+<tr>
+<td><strong>GeneMark</strong></td>
+<td>http://opal.biology.gatech.edu/GeneMark/</td>
+<td>GIT</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>GLIMMER</strong></td>
+<td>http://www.ncbi.nlm.nih.gov/genomes/MICROBES/glimmer_3.cgi  http://www.cbcb.umd.edu/software/glimmer</td>
+<td><strong>Maryland</strong></td>
+<td><strong>原核</strong></td>
+</tr>
+<tr>
+<td><strong>FgeneSB</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>细菌</td>
+</tr>
+<tr>
+<td><strong>FgeneSV</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>病毒</td>
+</tr>
+<tr>
+<td><strong>Generation</strong></td>
+<td>http://compbio.ornl.gov/generation/</td>
+<td>ORNL</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>FGENESH+</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Softberry</td>
+<td>原核</td>
+</tr>
+<tr>
+<td><strong>GenomeScan</strong></td>
+<td><strong>http://genes.mit.edu/genomescan.html</strong></td>
+<td><strong>MIT</strong></td>
+<td><strong>脊椎、拟南芥、玉米</strong></td>
+</tr>
+<tr>
+<td><strong>GeneWise</strong></td>
+<td>http://www.ebi.ac.uk/Wise2/</td>
+<td>EBI</td>
+<td>人、蠕虫</td>
+</tr>
+<tr>
+<td><strong>GRAIL</strong></td>
+<td>http://grail.lsd.ornl.gov/grailexp/</td>
+<td>ORNL</td>
+<td>人、小鼠、拟南芥、果蝇</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>基因开放阅读框/基因结构分析工具</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>对基因组序列的读码框区域进行预测</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NNSplice</strong></td>
+<td>http://www.fruitfly.org/seq_tools/splice.html</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>NetGene2</strong></td>
+<td>http://www.cbs.dtu.dk/services/NetGene2/</td>
+<td><strong>Web</strong></td>
+</tr>
+<tr>
+<td><strong>SPL/SPLM/RNASPL/FSPLICE</strong></td>
+<td>http://www.softberry.com/all.htm</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>GeneSplicer</strong></td>
+<td>http://www.tigr.org/tdb/GeneSplicer/gene_spl.html</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>SplicePredictor</strong></td>
+<td>http://bioinformatics.iastate.edu/cgi-bin/sp.cgi</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>分析mRNA/cDNA的外显子组成</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>GeneSeqer</strong></td>
+<td>http://bioinformatics.iastate.edu/cgi-bin/gs.cgi</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>Spidey</strong></td>
+<td><a href="http://www.ncbi.nih.gov/spidey">http://www.ncbi.nih.gov/spidey</a></td>
+<td><strong>Web</strong></td>
+</tr>
+<tr>
+<td><strong>Sim4</strong></td>
+<td>http://gamay.univ-perp.fr/analyse_seq/sim4  http://globin.cse.psu.edu/</td>
+<td>Web/Linux</td>
+</tr>
+<tr>
+<td><strong>BLAT</strong></td>
+<td><a href="http://www.cse.ucsc.edu/~kent/src/unzipped/blat/">http://www.cse.ucsc.edu/~kent/src/unzipped/blat/</a></td>
+<td>Linux</td>
+</tr>
+<tr>
+<td><strong>BLAST</strong></td>
+<td><a href="ftp://ftp.ncbi.nlm.nih.gov/BLAST/Executables">ftp://ftp.ncbi.nlm.nih.gov/BLAST/Executables</a></td>
+<td>Web/Windows/Linux</td>
+</tr>
+<tr>
+<td><strong>FASTA</strong></td>
+<td><a href="ftp://ftp.virginia.edu/pub/fasta/win32_fasta/fasta34t21b5d.zip">ftp://ftp.virginia.edu/pub/fasta/win32_fasta/fasta34t21b5d.zip</a></td>
+<td>Web/Windows/Linux</td>
+</tr>
+</tbody>
+</table>
+<p><strong>查询选择性剪切相关的网站</strong></p>
+<p><strong>从已知基因的功能推测剪切机制</strong></p>
+<table>
+<thead>
+<tr>
+<th>**http://<strong><strong>www.ebi.ac.uk</strong></strong>/<strong><strong>asd</strong></strong>/**<strong>index.html</strong></th>
+<th><strong>综合</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>http://splicenest.molgen.mpg.de/</strong></td>
+<td><strong>综合</strong></td>
+</tr>
+<tr>
+<td><strong>http://<strong><strong>cgsigma.cshl.org</strong></strong>/new_alt_exon_db2/</strong></td>
+<td><strong>综合</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.tigr.org/tigr-scripts/tgi/splnotes.pl?species=human</strong>  <strong>http://prosplicer.mbc.nctu.edu.tw/</strong>  <strong>http://www.bit.uq.edu.au/altExtron</strong></td>
+<td><strong>人</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.cse.ucsc.edu/~kent/intronerator/altsplice.html</strong></td>
+<td><strong>线虫</strong></td>
+</tr>
+<tr>
+<td><strong>http://www.tigr.org/tdb/e2k1/ath1/altsplicing/splicing_variations.shtml</strong></td>
+<td><strong>拟南芥</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>启动子数据库</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TransFac</strong></td>
+<td>http://www.gene-regulation.com/</td>
+</tr>
+<tr>
+<td><strong>EPD</strong></td>
+<td><strong>http://www.epd.isb-sib.ch/</strong></td>
+</tr>
+<tr>
+<td><strong>TRRD</strong></td>
+<td>http://wwwmgs.bionet.nsc.ru/mgs/gnw/trrd</td>
+</tr>
+<tr>
+<td><strong>Jaspar</strong></td>
+<td>http://jaspar.genereg.net/</td>
+</tr>
+<tr>
+<td><strong>Zhang  Lab</strong></td>
+<td>http://rulai.cshl.org/software/index1.htm</td>
+</tr>
+<tr>
+<td><strong>DBTSS</strong></td>
+<td>http://dbtss.hgc.jp/index.html</td>
+</tr>
+<tr>
+<td><strong>MIRAGE</strong></td>
+<td>http://www.ifti.org/</td>
+</tr>
+<tr>
+<td><strong>Bacillus  subtilis</strong></td>
+<td>http://dbtbs.hgc.jp/</td>
+</tr>
+<tr>
+<td><strong>Drosophila  melanogaster</strong></td>
+<td>http://www-biology.ucsd.edu/labs/Kadonaga/DCPD.html</td>
+</tr>
+<tr>
+<td><strong>E.  coli</strong></td>
+<td>http://arep.med.harvard.edu/ecoli_matrices/</td>
+</tr>
+<tr>
+<td><strong>Human</strong></td>
+<td>http://zlab.bu.edu/~mfrith/HPD.html</td>
+</tr>
+<tr>
+<td><strong>PlantProm</strong></td>
+<td>http://www.softberry.com/berry.phtml?topic=plantprom&amp;group=data&amp;subgroup=plantprom</td>
+</tr>
+<tr>
+<td><strong>Saccharomyces  cerevisiae</strong></td>
+<td>http://cgsigma.cshl.org/jian/</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>启动子结合位点分析</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PromoterScan</td>
+<td>http://bimas.dcrt.nih.gov:80/molbio/proscan/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Promoser</td>
+<td>http://biowulf.bu.edu/zlab/PromoSer/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Neural  Network Promoter Prediction</td>
+<td>http://www.fruitfly.org/seq_tools/promoter.html</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Softberry:  BPROM, TSSP, TSSG, TSSW</td>
+<td>http://www.softberry.com/berry.phtml?topic=index&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>MatInspector</td>
+<td>http://www.gene-regulation.de/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>RSAT</td>
+<td>http://rsat.ulb.ac.be/rsat/</td>
+<td>Web</td>
+</tr>
+<tr>
+<td><strong>Cister</strong></td>
+<td>http://zlab.bu.edu/~mfrith/cister.shtml</td>
+<td><strong>Web</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>CpG  Island</strong> <strong>分析</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CpG  Island</td>
+<td>http://www.uscnorris.com/cpgislands2/cpg.aspx</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>CpG  finder</td>
+<td>http://www.softberry.com/berry.phtml?topic=cpgfinder&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>CpGPlot/CpGReport/Isochore</td>
+<td>http://www.ebi.ac.uk/emboss/cpgplot/index.html</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>转录终止信号预测</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POLYAH</td>
+<td>http://www.softberry.com/berry.phtml?topic=polyah&amp;group=programs&amp;subgroup=promoter</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>polyadq</td>
+<td>http://rulai.cshl.org/tools/polyadq/polyadq_form.html</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
 </feed>
